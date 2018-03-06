@@ -15,6 +15,10 @@
 		8464A353204E862A00EE940A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8464A352204E862A00EE940A /* main.m */; };
 		8464A35D204E862A00EE940A /* XIBCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8464A35C204E862A00EE940A /* XIBCellTests.m */; };
 		8464A368204E862A00EE940A /* XIBCellUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8464A367204E862A00EE940A /* XIBCellUITests.m */; };
+		8464A37B204E86D000EE940A /* NotiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8464A378204E86D000EE940A /* NotiTableViewCell.m */; };
+		8464A37C204E86D000EE940A /* NotifocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8464A37A204E86D000EE940A /* NotifocationViewController.m */; };
+		8464A37D204E87BE00EE940A /* NotiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8464A379204E86D000EE940A /* NotiTableViewCell.xib */; };
+		8464A37E204E87C200EE940A /* NotifocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8464A375204E86D000EE940A /* NotifocationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		8464A363204E862A00EE940A /* XIBCellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XIBCellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8464A367204E862A00EE940A /* XIBCellUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XIBCellUITests.m; sourceTree = "<group>"; };
 		8464A369204E862A00EE940A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8464A375204E86D000EE940A /* NotifocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotifocationViewController.xib; sourceTree = "<group>"; };
+		8464A376204E86D000EE940A /* NotifocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotifocationViewController.h; sourceTree = "<group>"; };
+		8464A377204E86D000EE940A /* NotiTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotiTableViewCell.h; sourceTree = "<group>"; };
+		8464A378204E86D000EE940A /* NotiTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotiTableViewCell.m; sourceTree = "<group>"; };
+		8464A379204E86D000EE940A /* NotiTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotiTableViewCell.xib; sourceTree = "<group>"; };
+		8464A37A204E86D000EE940A /* NotifocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotifocationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,12 @@
 				8464A344204E862A00EE940A /* AppDelegate.m */,
 				8464A346204E862A00EE940A /* ViewController.h */,
 				8464A347204E862A00EE940A /* ViewController.m */,
+				8464A376204E86D000EE940A /* NotifocationViewController.h */,
+				8464A37A204E86D000EE940A /* NotifocationViewController.m */,
+				8464A375204E86D000EE940A /* NotifocationViewController.xib */,
+				8464A377204E86D000EE940A /* NotiTableViewCell.h */,
+				8464A378204E86D000EE940A /* NotiTableViewCell.m */,
+				8464A379204E86D000EE940A /* NotiTableViewCell.xib */,
 				8464A349204E862A00EE940A /* Main.storyboard */,
 				8464A34C204E862A00EE940A /* Assets.xcassets */,
 				8464A34E204E862A00EE940A /* LaunchScreen.storyboard */,
@@ -238,9 +254,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8464A37E204E87C200EE940A /* NotifocationViewController.xib in Resources */,
 				8464A350204E862A00EE940A /* LaunchScreen.storyboard in Resources */,
 				8464A34D204E862A00EE940A /* Assets.xcassets in Resources */,
 				8464A34B204E862A00EE940A /* Main.storyboard in Resources */,
+				8464A37D204E87BE00EE940A /* NotiTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,8 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8464A348204E862A00EE940A /* ViewController.m in Sources */,
+				8464A37C204E86D000EE940A /* NotifocationViewController.m in Sources */,
 				8464A353204E862A00EE940A /* main.m in Sources */,
 				8464A345204E862A00EE940A /* AppDelegate.m in Sources */,
+				8464A37B204E86D000EE940A /* NotiTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +453,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = XIBCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.db.XIBCell;
+				PRODUCT_BUNDLE_IDENTIFIER = com.XIBCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -446,7 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = XIBCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.db.XIBCell;
+				PRODUCT_BUNDLE_IDENTIFIER = com.XIBCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
