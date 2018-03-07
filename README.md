@@ -32,7 +32,8 @@ return cell;
 
 
 
-
+ps：
+如果创建的自定义cell没有xib则自行新建后，需在cell的`custom class`-`class`里设置关联的cell类名；重用标志仍然是必须的。
 
 
 
